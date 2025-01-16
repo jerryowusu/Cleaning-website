@@ -8,7 +8,87 @@
 </head>
 <body class="bg-gradient-to-b from-green-100 to-white">
     
-   <div id="header"></div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8" aria-label="Global">
+            <div class="flex md:flex-1">
+                <a href="/" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Eze Cleaning Services</span>
+                    <img alt="Eze Cleaning Services Logo" loading="lazy" width="48" height="48" decoding="async" class="h-12 w-auto" src="/logo.png">
+                </a>
+            </div>
+    
+            <div class="flex md:hidden">
+                <button type="button" id="menu-toggle" class="menu-toggle -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6" aria-hidden="true">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="hidden md:flex space-x-6 justify-center items-center">
+                <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-900 hover:underline hover:underline-offset-4 transition-all duration-300 transform hover:scale-105">Home</a>
+                <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-900 hover:underline hover:underline-offset-4 transition-all duration-300 transform hover:scale-105">About Us</a>
+                <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-900 hover:underline hover:underline-offset-4 transition-all duration-300 transform hover:scale-105">Services</a>
+                <a href="book.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-900 hover:underline hover:underline-offset-4 transition-all duration-300 transform hover:scale-105">Book Now</a>
+                <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-green-900 hover:underline hover:underline-offset-4 transition-all duration-300 transform hover:scale-105">Contact Us</a>
+            </div>
+
+            <div class="hidden md:flex md:flex-1 md:justify-end">
+                <a href="book.html" class="text-sm font-semibold leading-6 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md">
+                    Book Now
+                </a>
+            </div>
+        </nav>
+    
+        <div  id="mobile-menu" 
+                class="absolute top-0 right-0 w-[70%] min-h-screen bg-gradient-to-b from-green-400 via-green-700 to-green-400 text-white 
+                hidden flex-col items-center space-y-8 py-10 shadow-[0_10px_30px_rgba(0,255,150,0.4)] 
+                transform transition-transform duration-300 ease-in-out md:hidden rounded-b-[10px]">
+            <div class="absolute inset-0 border border-green-500 rounded-b-[40px] opacity-40 blur-md -z-10"></div>
+            
+            <h2 class="text-2xl font-extrabold tracking-widest text-green-300 uppercase drop-shadow-[0_0_10px_rgba(0,255,150,0.7)]">
+            Menu
+            </h2>
+        
+            <a href="index.html" 
+            class="relative text-lg font-semibold uppercase tracking-wide text-gray-300 hover:text-white transition-colors duration-300">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-green-300 to-green-500 opacity-0 hover:opacity-10 rounded-md"></span>
+            Home
+            </a>
+            <a href="about.html" 
+            class="relative text-lg font-semibold uppercase tracking-wide text-gray-300 hover:text-white transition-colors duration-300">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-green-300 to-green-500 opacity-0 hover:opacity-10 rounded-md"></span>
+            About
+            </a>
+            <a href="services.html" 
+            class="relative text-lg font-semibold uppercase tracking-wide text-gray-300 hover:text-white transition-colors duration-300">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-green-300 to-green-500 opacity-0 hover:opacity-10 rounded-md"></span>
+            Services
+            </a>
+            <a href="book.html" 
+            class="relative text-lg font-semibold uppercase tracking-wide text-gray-300 hover:text-white transition-colors duration-300">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-green-300 to-green-500 opacity-0 hover:opacity-10 rounded-md"></span>
+            Book Now
+            </a>
+            <a href="contact.html" 
+            class="relative text-lg font-semibold uppercase tracking-wide text-gray-300 hover:text-white transition-colors duration-300">
+            <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-green-300 to-green-500 opacity-0 hover:opacity-10 rounded-md"></span>
+            Contact Us
+            </a>
+        
+            <button id="close-menu"
+            class="absolute md:hidden top-4 right-4 w-10 h-10 rounded-full bg-green-300 hover:bg-green-600 flex items-center justify-center text-red-900 hover:text-white transition-colors duration-300 shadow-lg">
+            <span class="sr-only">Close menu</span>
+            ✖
+            </button>
+        
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-1 bg-gradient-to-r from-green-500 to-green-400 rounded-full blur-md"></div>
+        </div>       
+        
+        </header>
 
    
    <main class="relative isolate overflow-hidden">

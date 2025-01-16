@@ -18,7 +18,13 @@
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close-menu');
             let menuOpen = false;
+
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
 
             menuToggle.addEventListener('click', () => {
                 menuOpen = !menuOpen;
