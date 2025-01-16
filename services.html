@@ -7,16 +7,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col bg-purple-50">
-    <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-        <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-        <a href="/services" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
-        <a href="/pricing" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
-        <a href="/book" class="text-sm font-semibold leading-6 text-gray-900">Book Now</a>
-        <a href="/testimonials" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</a>
-        <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
-        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
-    </div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="/" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Eze Cleaning Services</span>
+                    <img alt="Eze Cleaning Services Logo" loading="lazy" width="48" height="48" decoding="async" class="h-12 w-auto" src="/logo.png">
+                </a>
+            </div>
+    
+            <div class="flex lg:hidden">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6" aria-hidden="true">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+                <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+                <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
+                <a href="pricing.html" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+                <a href="book.html" class="text-sm font-semibold leading-6 text-gray-900">Book Now</a>
+                <a href="testimonials.html" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</a>
+                <a href="blogs.html" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
+                <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+            </div>
+    
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="book.html" class="text-sm font-semibold leading-6 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md">
+                    Book Now
+                </a>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="bg-white py-24 sm:py-32">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -25,10 +53,9 @@
               <p class="mt-2 text-lg leading-8 text-gray-600">We offer a wide range of cleaning services to meet all your needs.</p>
             </div>
             <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <!-- Service 1 -->
               <article class="flex flex-col items-start justify-between">
                 <div class="relative w-full">
-                  <img alt="Residential Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="/residential-cleaning.jpg">
+                  <img alt="Residential Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="images/residential.jpg">
                   <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="max-w-xl">
@@ -43,10 +70,9 @@
                   </div>
                 </div>
               </article>
-              <!-- Service 2 -->
               <article class="flex flex-col items-start justify-between">
                 <div class="relative w-full">
-                  <img alt="Deep Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="/deep-cleaning.jpg">
+                  <img alt="Deep Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="images/deep.jpg">
                   <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="max-w-xl">
@@ -61,10 +87,9 @@
                   </div>
                 </div>
               </article>
-              <!-- Service 3 -->
               <article class="flex flex-col items-start justify-between">
                 <div class="relative w-full">
-                  <img alt="Post-Construction Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="/post-construction-cleaning.jpg">
+                  <img alt="Post-Construction Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="images/post-construction.jpg">
                   <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="max-w-xl">
@@ -79,10 +104,9 @@
                   </div>
                 </div>
               </article>
-              <!-- Service 4 -->
               <article class="flex flex-col items-start justify-between">
                 <div class="relative w-full">
-                  <img alt="Office Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="/office-cleaning.jpg">
+                  <img alt="Office Cleaning" loading="lazy" width="800" height="400" decoding="async" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" src="images/office.jpg">
                   <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="max-w-xl">
@@ -99,7 +123,7 @@
               </article>
             </div>
             <div class="mt-16 text-center">
-              <a href="/book" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
+              <a href="book.html" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
                 Book a Service
               </a>
             </div>

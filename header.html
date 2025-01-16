@@ -1,34 +1,36 @@
 <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div class="flex items-center">
-            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                WIA
-            </div>
-            <h1 class="ml-4 text-2xl font-bold text-purple-800">Women in Action</h1>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+            <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">Eze Cleaning Services</span>
+                <img alt="Eze Cleaning Services Logo" loading="lazy" width="48" height="48" decoding="async" class="h-12 w-auto" src="/logo.png">
+            </a>
         </div>
 
-        <button id="menu-toggle" class="md:hidden text-purple-700 hover:text-purple-900 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
+        <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6" aria-hidden="true">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
 
-        <nav class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-purple-700 hover:text-purple-900">Home</a>
-            <a href="about.html" class="text-purple-700 hover:text-purple-900">About</a>
-            <a href="program.html" class="text-purple-700 hover:text-purple-900">Programs</a>
-            <a href="blogs.html" class="text-purple-700 hover:text-purple-900">Blogs</a>
-            <a href="events.html" class="text-purple-700 hover:text-purple-900">Events</a>
-            <a href="contact.html" class="text-purple-700 hover:text-purple-900">Contact</a>
-        </nav>
-    </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+            <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
+            <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
+            <a href="pricing.html" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+            <a href="book.html" class="text-sm font-semibold leading-6 text-gray-900">Book Now</a>
+            <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+        </div>
 
-    <div id="mobile-menu" class="absolute top-full left-0 w-full bg-purple-600 text-white hidden flex-col items-center space-y-4 py-6 shadow-md md:hidden">
-        <a href="index.html" class="text-lg hover:text-gray-200">Home</a>
-        <a href="about.html" class="text-lg hover:text-gray-200">About</a>
-        <a href="program.html" class="text-lg hover:text-gray-200">Programs</a>
-        <a href="blogs.html" class="text-lg hover:text-gray-200">Blogs</a>
-        <a href="events.html" class="text-lg hover:text-gray-200">Events</a>
-        <a href="contact.html" class="text-lg hover:text-gray-200">Contact</a>
-    </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="book.html" class="text-sm font-semibold leading-6 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md">
+                Book Now
+            </a>
+        </div>
+    </nav>
 </header>

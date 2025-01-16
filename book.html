@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-green-100 to-white">
+    
+   <div id="header"></div>
+
+   
+   <main class="relative isolate overflow-hidden">
+    <div 
+    class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white shadow-xl shadow-green-600/10 ring-1 ring-green-50 md:-mr-20 lg:-mr-36" 
+    aria-hidden="true"
+    ></div>
+    <div class="mx-auto max-w-7xl py-24 sm:py-32 px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          Book A Service
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Schedule your cleaning service in just a few clicks. Experience professional, eco-friendly, and reliable cleaning tailored to your needs.
+        </p>
+      </div>
+
+      <div class="mt-16 flex justify-center">
+        <div class="w-full max-w-4xl rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/10 p-10">
+          <form action="#" method="POST" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="full-name" class="block text-sm font-semibold text-gray-900">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required
+                  class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-900">Email Address</label>
+                <input type="email" id="email" name="email" required
+                  class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-900">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required
+                  class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+              </div>
+
+              <div>
+                <label for="service" class="block text-sm font-semibold text-gray-900">Select Service</label>
+                <select id="service" name="service" required
+                  class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  <option value="">Choose a service...</option>
+                  <option value="residential">Residential Cleaning</option>
+                  <option value="deep">Deep Cleaning</option>
+                  <option value="post-construction">Post-Construction Cleaning</option>
+                  <option value="office">Office Cleaning</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="date" class="block text-sm font-semibold text-gray-900">Preferred Date</label>
+              <input type="date" id="date" name="date" required
+                class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            </div>
+
+            <div>
+              <label for="notes" class="block text-sm font-semibold text-gray-900">Additional Notes</label>
+              <textarea id="notes" name="notes" rows="4"
+                class="mt-2 block w-full rounded-xl border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"></textarea>
+            </div>
+
+            <div class="mt-10 text-center">
+              <button type="submit"
+                class="w-full rounded-xl bg-green-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
+                Confirm Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+  </main>
+  
+    <div id="footer"></div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
